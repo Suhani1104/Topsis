@@ -1,13 +1,14 @@
 # Topsis for Multi Criteria Decision Making
 ## Introduction
+TOPSIS (**Technique for Order Preference by Similarity to Ideal Solution**) is a widely used **multi-criteria decision-making (MCDM)** method.  
+It helps in ranking multiple alternatives by comparing their distance from an **ideal best solution** and an **ideal worst solution**.
+Due to its simplicity and effectiveness, TOPSIS is commonly applied in areas such as decision analysis, resource selection, performance evaluation, and ranking problems involving multiple criteria.
 
-This repository contains a Python implementation of the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)**.  
-TOPSIS is a powerful **multi-criteria decision-making (MCDM)** method that assists in ranking a set of alternatives based on their relative closeness to the ideal solution.
-
-The method is widely used in decision analysis problems where multiple, often conflicting, criteria must be evaluated simultaneously. TOPSIS identifies solutions that have the **shortest distance from the ideal solution** and the **farthest distance from the negative-ideal solution**, thereby providing a clear and logical ranking of alternatives.
-
-This repository demonstrates TOPSIS through python command-line implementation, python package, and a web-based service.
-
+This repository demonstrates TOPSIS through **three different implementations**:
+- A Python command-line program  
+- A reusable Python package (published on PyPI)  
+- A web-based TOPSIS service
+  
 ---
 
 ## Table of Contents
@@ -20,12 +21,12 @@ This repository demonstrates TOPSIS through python command-line implementation, 
 
 ## 1. Python Command-Line Implementation
 
-This part provides a **Python program** to execute the TOPSIS algorithm using the command line.
+This module provides a **command-line based Python implementation** of the TOPSIS algorithm.
 
 ### Features
 - Accepts input data from a CSV file
 - Validates weights, impacts, and data format
-- Computes TOPSIS scores and ranks alternatives
+- Computes TOPSIS scores and ranking
 - Outputs results to a CSV file
 
 ### Input
@@ -48,4 +49,31 @@ Output file
 <img width="847" height="299" alt="image" src="https://github.com/user-attachments/assets/4f2a473d-aaf3-4c3e-8c9b-fc829dc5d0c1" />
 
 
+## 2. Python Package (PyPI)
+
+## 3. TOPSIS Web Service
+A web-based implementation of TOPSIS is provided using Flask, allowing users to perform TOPSIS analysis through an interactive interface.
+
+### Features
+- Upload CSV file through the browser
+- Enter weights and impacts via form input
+- Validates Email format, Matching number of weights, impacts, and criteria, Correct impact symbols (+ or -)
+- Displays results directly on the web page
+- Generates downloadable result CSV file sent via mail
+
+### User Inputs
+- CSV file
+- Weights (comma-separated)
+- Impacts (comma-separated + or -)
+- Email ID
+
+  <img width="1037" height="842" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
+
+### Outputs
+Result table displayed on the web page
+<img width="774" height="826" alt="image" src="https://github.com/user-attachments/assets/3ff22343-add3-49da-96cd-d6abc3e9f5f6" />
+
+
+Downloadable result CSV file
+<img width="651" height="584" alt="Screenshot 2026-01-20 190224" src="https://github.com/user-attachments/assets/61ef56ce-65d9-4de6-8664-2696206018ce" />
 
