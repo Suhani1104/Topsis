@@ -70,15 +70,15 @@ A web-based implementation of TOPSIS is provided using Flask, allowing users to 
 - Impacts (comma-separated + or -)
 - Email ID
   
-<img width="500" height="360" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
+<img width="550" height="413" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
 
 ### Outputs
 Result table displayed on the web page 
 
-<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/3ff22343-add3-49da-96cd-d6abc3e9f5f6" />
+<img width="550" height="733" alt="image" src="https://github.com/user-attachments/assets/3ff22343-add3-49da-96cd-d6abc3e9f5f6" />
 
 
 Downloadable result CSV file sent via mail
 
-<img width="600" height="500" alt="Screenshot 2026-01-20 190224" src="https://github.com/user-attachments/assets/61ef56ce-65d9-4de6-8664-2696206018ce" />
+<img width="550" height="458" alt="Screenshot 2026-01-20 190224" src="https://github.com/user-attachments/assets/61ef56ce-65d9-4de6-8664-2696206018ce" />
 
