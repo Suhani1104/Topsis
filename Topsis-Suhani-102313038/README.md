@@ -23,3 +23,6 @@ python -m topsis_suhani_102313038.topsis input.csv "1,1,1,1" "+,-,+,+" output.cs
   - Topsis Score
   - Ranking
 
+## License 
+This project is licensed under the **MIT License**.
+[License](LICENSE)
