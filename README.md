@@ -30,11 +30,11 @@ This part provides a **Python program** to execute the TOPSIS algorithm using th
 
 ### Input
 - **CSV file**  
-  - First column: Alternative names  
-  - Remaining columns: Numeric criteria values
 - **Weights**: Comma-separated numeric values  
 - **Impacts**: Comma-separated values (`+` for benefit, `-` for cost)
 
 ### Usage
 ```bash
 python topsis.py input.csv "1,1,1,2" "+,+,-,+" output.csv
+
+### Output
