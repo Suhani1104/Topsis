@@ -15,11 +15,11 @@ STATIC_FOLDER = "static"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
-# ---------- EMAIL CONFIG ----------
-SENDER_EMAIL = "suhani.work04@gmail.com"      # CHANGE
-APP_PASSWORD = "tgxu czcr bsab lpqd"   # CHANGE
+# EMAIL CONFIGURATION 
+SENDER_EMAIL = "suhani.work04@gmail.com"      
+APP_PASSWORD = "tgxu czcr bsab lpqd"   
 
-# ---------- TOPSIS LOGIC ----------
+#  TOPSIS 
 def run_topsis(input_file, weights, impacts, output_file):
     df = pd.read_csv(input_file)
 
@@ -50,7 +50,7 @@ def run_topsis(input_file, weights, impacts, output_file):
     df.to_csv(output_file, index=False)
     return df
 
-# ---------- EMAIL ----------
+# EMAIL
 def send_email(receiver, attachment_path):
     msg = EmailMessage()
     msg["Subject"] = "TOPSIS Analysis Result"
@@ -77,7 +77,7 @@ def send_email(receiver, attachment_path):
         server.login(SENDER_EMAIL, APP_PASSWORD)
         server.send_message(msg)
 
-# ---------- ROUTES ----------
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -93,7 +93,7 @@ def submit():
     impacts = request.form.get("impacts", "").strip()
     email = request.form.get("email", "").strip()
 
-    # Email validation
+    # validation
     if not re.match(r"^[\w\.-]+@[\w\.-]+\.\w+$", email):
         return render_template("index.html", error="Invalid email format.")
 
@@ -137,8 +137,6 @@ def submit():
         table=table_html
     )
 
-# ---------- START ----------
-#app.run(debug=True)
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
