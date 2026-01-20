@@ -36,5 +36,6 @@ This part provides a **Python program** to execute the TOPSIS algorithm using th
 ### Usage
 ```bash
 python topsis.py input.csv "1,1,1,2" "+,+,-,+" output.csv
+``` 
 
 ### Output
