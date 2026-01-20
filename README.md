@@ -80,6 +80,12 @@ pip install Topsis-Suhani-102313038
 ```bash
 python -m topsis_suhani_102313038.topsis input.csv "1,1,1,1" "+,-,+,+" output.csv
 ```
+
+### Output
+The output CSV file contains:
+- Topsis Score for each alternative
+- Rank of alternatives based on their closeness to the ideal solution
+  
 ### License
 This package is released under the MIT [LICENCE](LICENSE)
 
