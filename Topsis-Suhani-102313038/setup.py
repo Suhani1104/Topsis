@@ -1,12 +1,14 @@
 from setuptools import setup, find_packages
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name="Topsis-Suhani-102313038",
-    version="1.0.0",
+    version="1.0.1",
     author="Suhani Gupta",
     author_email="suhani.work04@gmail.com",
     description="TOPSIS implementation for multi-criteria decision making",
-    long_description=open("README.md").read(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=["pandas", "numpy"],
