@@ -35,9 +35,18 @@ This module provides a **command-line based Python implementation** of the TOPSI
 - **Impacts**: Comma-separated values (`+` or `-` )
 
 ### Usage example
+1. Must have Python installed
+2. Clone this repository to your local machine :
+   ```bash
+   git clone https://github.com/Suhani1104/Topsis
+   ```
+3. Navigate to the project directory
+4. Run Topsis script with command line arguments : 
+   Example
 ```bash
 python topsis.py input.csv "1,1,1,1,1" "-,+,-,-,-" output.csv
 ```
+5. Result will be saved to the specifies CSV file.
 Command line implementation
 
 <img width="1626" height="93" alt="Screenshot 2026-01-19 232853" src="https://github.com/user-attachments/assets/8cb45582-e2d7-4e20-88c4-914b7ce0e175" />
