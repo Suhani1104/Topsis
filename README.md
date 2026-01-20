@@ -62,6 +62,7 @@ Output file
 
 
 ## 2. Python Package (PyPI)
+https://pypi.org/project/Topsis-Suhani-102313038/1.0
 
 ## 3. TOPSIS Web Service
 A web-based implementation of TOPSIS is provided using Flask, allowing users to perform TOPSIS analysis through an interactive interface.
