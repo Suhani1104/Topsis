@@ -32,7 +32,7 @@ This module provides a **command-line based Python implementation** of the TOPSI
 ### Input
 - **CSV file**  
 - **Weights**: Comma-separated numeric values  
-- **Impacts**: Comma-separated values (`+` for benefit, `-` for cost)
+- **Impacts**: Comma-separated values (`+` or `-` )
 
 ### Usage example
 ```bash
@@ -59,8 +59,8 @@ A web-based implementation of TOPSIS is provided using Flask, allowing users to 
 
 ### Features
 - Upload CSV file through the browser
-- Enter weights and impacts via form input
-- Validates Email format, Matching number of weights, impacts, and criteria, Correct impact symbols (+ or -)
+- Enter weights, impacts, and email id via form input
+- Validates Email format, Matching number of weights and impacts, Correct impact symbols (+ or -)
 - Displays results directly on the web page
 - Generates downloadable result CSV file sent via mail
 
