@@ -69,10 +69,11 @@ A web-based implementation of TOPSIS is provided using Flask, allowing users to 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
 
 ### Outputs
-Result table displayed on the web page
+Result table displayed on the web page 
+
 <img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/3ff22343-add3-49da-96cd-d6abc3e9f5f6" />
 
-
 Downloadable result CSV file
+
 <img width="600" height="500" alt="Screenshot 2026-01-20 190224" src="https://github.com/user-attachments/assets/61ef56ce-65d9-4de6-8664-2696206018ce" />
 
