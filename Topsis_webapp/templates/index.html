@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOPSIS Web Service</title>
+    <style>
+        body {
+            background: #010523d7;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            color: #111;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 900px;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #dcdcdc;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background: black;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .error-box {
+            background: #fdecea;
+            color: #b91c1c;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .success-box {
+            background: #e6f4ea;
+            color: #166534;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .sample-box {
+            background: #111111ca;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .sample-box pre {
+            color: white;
+        }
+
+        .download-btn {
+            background: white;
+            color: black;
+            margin-top: 10px;
+            width: auto;
+            padding: 8px 15px;
+        }
+
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .result-table th, .result-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .result-table th {
+            background: #111;
+            color: white;
+        }
+        .footer-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+    font-style: italic;}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>TOPSIS WEB SERVICE</h1>
+    <div class="subtitle">Multi-Criteria Decision Analysis Tool</div>
+
+    {% if error %}
+        <div class="error-box">{{ error }}</div>
+    {% endif %}
+
+    {% if success %}
+        <div class="success-box">{{ success }}</div>
+    {% endif %}
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label>Upload CSV File *</label>
+        <input type="file" name="file" required>
+
+        <label>Weights *</label>
+        <input type="text" name="weights" placeholder="1,1,1,1" required>
+
+        <label>Impacts *</label>
+        <input type="text" name="impacts" placeholder="+,+,-,+" required>
+
+        <label>Email ID *</label>
+        <input type="email" name="email" required>
+
+        <button type="submit">CALCULATE TOPSIS</button>
+    </form>
+
+    <div class="sample-box">
+        <b>EXAMPLE CSV FORMAT:</b>
+        <pre>
+M,P1,P2,P3,P4 
+M1,250,64,12,4000
+M2,200,32,8,3500
+M3,300,128,16,4500
+
+        </pre>
+        <a href="/download-sample">
+            <button class="download-btn">Download Sample CSV File</button>
+        </a>
+    </div>
+
+    {% if table %}
+        <h2 style="margin-top:40px;"> TOPSIS RESULTS</h2>
+        {{ table | safe }}
+    {% endif %}
+
+    <div class="footer-text">
+    ~By Suhani Gupta
+</div>
+
+</div>
+
+</body>
+</html>
