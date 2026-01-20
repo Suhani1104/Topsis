@@ -42,7 +42,7 @@ def topsis(input_file, weights, impacts, output_file):
 
     score = dist_worst / (dist_best + dist_worst)
     df["Topsis Score"] = score
-    df["Rank"] = score.rank(ascending=False)
+    df["Rank"] = pd.Series(score).rank(ascending=False)
 
     df.to_csv(output_file, index=False)
 
