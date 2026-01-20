@@ -33,15 +33,18 @@ This part provides a **Python program** to execute the TOPSIS algorithm using th
 - **Weights**: Comma-separated numeric values  
 - **Impacts**: Comma-separated values (`+` for benefit, `-` for cost)
 
-### Usage
+### Usage example
 ```bash
-python topsis.py input.csv "1,1,1,2" "+,+,-,+" output.csv
-``` 
+python topsis.py input.csv "1,1,1,1,1" "-,+,-,-,-" output.csv
+```
+Command line implementation
 <img width="1626" height="93" alt="Screenshot 2026-01-19 232853" src="https://github.com/user-attachments/assets/8cb45582-e2d7-4e20-88c4-914b7ce0e175" />
+
+Input File
 <img width="636" height="327" alt="image" src="https://github.com/user-attachments/assets/53dd7c91-a3f6-45f8-bcba-dfc67dee4849" />
 
 ### Output
-Result file
+Output file
 <img width="847" height="299" alt="image" src="https://github.com/user-attachments/assets/4f2a473d-aaf3-4c3e-8c9b-fc829dc5d0c1" />
 
 
