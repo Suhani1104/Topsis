@@ -70,7 +70,7 @@ A web-based implementation of TOPSIS is provided using Flask, allowing users to 
 - Impacts (comma-separated + or -)
 - Email ID
   
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
+<img width="500" height="360" alt="image" src="https://github.com/user-attachments/assets/5dc1e4d1-0ffc-443e-b62e-03b5d2872813" />
 
 ### Outputs
 Result table displayed on the web page 
