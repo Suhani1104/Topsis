@@ -63,6 +63,8 @@ A web-based implementation of TOPSIS is provided using Flask, allowing users to 
 
 ### User Inputs
 - CSV file
+- Weights
+- CSV file
 - Weights (comma-separated)
 - Impacts (comma-separated + or -)
 - Email ID
