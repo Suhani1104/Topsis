@@ -62,7 +62,28 @@ Output file
 
 
 ## 2. Python Package (PyPI)
-https://pypi.org/project/Topsis-Suhani-102313038/1.0
+A reusable Python Package implementation of TOPSIS, designed for easy integration into other projects.
+- Published on PyPi :
+  https://pypi.org/project/Topsis-Suhani-102313038/1.0.1/
+
+### Package Name
+```bash
+Topsis-Suhani-102313038
+```
+
+### Installation
+```bash
+pip install Topsis-Suhani-102313038
+```
+
+### Usage 
+```bash
+python -m topsis_suhani_102313038.topsis input.csv "1,1,1,1" "+,-,+,+" output.csv
+```
+### License
+This package is released under the MIT [LICENCE](LICENSE)
+
+
 
 ## 3. TOPSIS Web Service
 A web-based implementation of TOPSIS is provided using Flask, allowing users to perform TOPSIS analysis through an interactive interface.
